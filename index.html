@@ -10,6 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+/* Evita que URLs largas se desborden */
+section ul li a,
+section ul li {
+    word-break: break-word;       /* rompe palabras largas */
+    overflow-wrap: break-word;    /* soporte adicional */
+}
+
 :root {
     --primary: #0f172a;
     --accent: #2563eb;
