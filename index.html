@@ -34,16 +34,12 @@ body {
     line-height: 1.7;
 }
 
-/* NAVBAR */
 .navbar {
     position: sticky;
     top: 0;
     background: rgba(255, 255, 255, 0.85);
-    
-    /* Safari support */
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-
     border-bottom: 1px solid var(--border);
     padding: 18px 40px;
     display: flex;
@@ -70,7 +66,6 @@ body {
     color: var(--accent);
 }
 
-/* HERO */
 .hero {
     padding: 80px 20px 60px 20px;
     text-align: center;
@@ -89,7 +84,6 @@ body {
     font-size: 18px;
 }
 
-/* CARD CONTAINER */
 .container {
     max-width: 900px;
     margin: 40px auto 80px auto;
@@ -104,7 +98,6 @@ body {
     border: 1px solid var(--border);
 }
 
-/* SECTIONS */
 .section {
     margin-bottom: 50px;
 }
@@ -129,7 +122,6 @@ body {
     color: var(--text);
 }
 
-/* ALERT */
 .alert {
     background: #fff7ed;
     border-left: 4px solid #f97316;
@@ -139,7 +131,6 @@ body {
     color: #9a3412;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 40px 20px;
@@ -156,6 +147,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 .background-pattern {
     position: fixed;
     inset: 0;
@@ -165,7 +157,6 @@ a:hover {
         radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.08) 0px, transparent 40%),
         linear-gradient(to right, rgba(37, 99, 235, 0.04) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(37, 99, 235, 0.04) 1px, transparent 1px);
-
     background-size: 
         100% 100%,
         100% 100%,
@@ -173,7 +164,6 @@ a:hover {
         60px 60px;
 }
 
-/* RESPONSIVE */
 @media(max-width: 768px) {
     .hero h1 {
         font-size: 30px;
@@ -191,16 +181,7 @@ a:hover {
 </head>
 <body>
 <div class="background-pattern"></div>
-<!--
-<div class="navbar">
-    <div class="logo">OnTime</div>
-    <div class="nav-links">
-        <a href="#">Inicio</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Contacto</a>
-    </div>
-</div>
--->
+
 <section class="hero">
     <h1>Términos y Condiciones</h1>
     <p>Marco legal que regula el uso de la plataforma tecnológica OnTime para optimización logística y coordinación operativa.</p>
@@ -209,90 +190,193 @@ a:hover {
 <div class="container">
 <div class="card">
 
+    <!-- Secciones completas 1 a 21 -->
     <div class="section">
         <h2>1. Introducción</h2>
-        <p>
-        OnTime es una plataforma tecnológica diseñada para la optimización logística, asignación de rutas y coordinación operativa en tiempo real.
-        </p>
-        <p>
-        El uso de la aplicación implica la aceptación total de los presentes términos.
-        </p>
+        <p>Bienvenido a OnTime.</p>
+        <p>Estos Términos y Condiciones regulan el uso de la aplicación móvil OnTime (en adelante, “la Plataforma”), diseñada para la optimización logística y guiado en tiempo real de operaciones que impliquen desplazamiento, entregas o tareas secuenciales. Al utilizar la aplicación, usted acepta cumplir con estos términos. Si no está de acuerdo, debe abstenerse de utilizar la aplicación.</p>
     </div>
 
     <div class="section">
         <h2>2. Registro e Inicio de Sesión</h2>
         <ul>
-            <li>El usuario debe pertenecer a un equipo logístico autorizado.</li>
-            <li>El acceso requiere correo electrónico, contraseña y nombre del equipo.</li>
-            <li>Las credenciales son personales e intransferibles.</li>
+            <li>Antes de registrarte, debes conocer el equipo logístico con el que trabajarás, asignado por el administrador o centro de control.</li>
+            <li>También puedes crear tu propio equipo logístico, pero deberás contactar al desarrollador para obtener credenciales válidas.</li>
+            <li>Para ingresar: Correo electrónico, Contraseña, Nombre del equipo logístico o empresa.</li>
+            <li>Una vez iniciada la sesión correctamente, podrás recibir asignaciones de tareas según lo determine el administrador.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>3. Recepción y Gestión de Asignaciones</h2>
+        <h2>3. Recepción de Asignaciones</h2>
         <ul>
-            <li>Las rutas serán notificadas mediante alertas en el dispositivo.</li>
-            <li>La navegación puede integrarse con Google Maps o Waze.</li>
-            <li>Las tareas deben marcarse como completadas o reportar incidencia.</li>
-        </ul>
-        <div class="alert">
-            El botón SOS debe utilizarse exclusivamente en situaciones de emergencia real.
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>4. Uso de Ubicación</h2>
-        <p>
-        La aplicación puede recopilar datos de ubicación en tiempo real para fines operativos, optimización y monitoreo.
-        </p>
-        <p>
-        La función SOS enviará la última ubicación disponible al centro de control cuando exista conectividad.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>5. Protección de Datos</h2>
-        <ul>
-            <li>Correo electrónico y credenciales.</li>
-            <li>Token de notificación (FCM).</li>
-            <li>Información de rutas y paradas.</li>
-            <li>Ubicación con consentimiento del usuario.</li>
-        </ul>
-        <p>La información se utiliza únicamente para fines operativos internos.</p>
-    </div>
-
-    <div class="section">
-        <h2>6. Limitación de Responsabilidad</h2>
-        <ul>
-            <li>Interrupciones por conectividad.</li>
-            <li>Uso indebido por parte del usuario.</li>
-            <li>Incumplimientos laborales entre empresas y conductores.</li>
+            <li>Cuando el administrador asigne rutas o tareas, recibirás una notificación en tu teléfono (asegúrate de aceptar notificaciones).</li>
+            <li>Al abrir la notificación, podrás ver todas las rutas asignadas a tu equipo.</li>
+            <li>Para comenzar una ruta: Presiona “Navegar”. La app te redirigirá a Google Maps o Waze con la ruta asignada.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>7. Legislación Aplicable</h2>
-        <p>Estos términos se rigen por las leyes de Colombia.</p>
+        <h2>4. Completado de Tareas</h2>
+        <ul>
+            <li>Cuando termines la asignación, tienes dos opciones: Completado (marca la tarea como finalizada) o Reportar un problema (notifica cualquier incidencia con la asignación).</li>
+            <li>⚠️ El botón SOS es diferente y solo se usa en emergencias reales, no para reportar problemas o completar rutas.</li>
+        </ul>
     </div>
 
     <div class="section">
-        <h2>8. Contacto</h2>
-        <p>Para consultas: 
-        <a href="mailto:desarrolladorvip@gmail.com">desarrolladorvip@gmail.com</a>
-        </p>
-    </div>
-    <div class="section">
-    <h2>9. Sistema de Calificación y Aprobación</h2>
+        <h2>5. Uso por Terceros</h2>
         <ul>
-            <li>OnTime puede incluir un sistema de calificación para evaluar desempeño de usuarios, equipos logísticos o tareas completadas.</li>
+            <li>La app no debe ser usada por personas ajenas al equipo logístico o sin credenciales oficiales.</li>
+            <li>Toda asignación está vinculada a un equipo y administrador específicos.</li>
+            <li>El uso de la app por terceros puede causar errores en asignaciones y seguimiento operativo.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Resumen del Flujo</h2>
+        <ul>
+            <li>Obtener credenciales del administrador / crear tu equipo con autorización del desarrollador</li>
+            <li>Registrarte e iniciar sesión con correo, contraseña y nombre del equipo</li>
+            <li>Recibir notificaciones de asignaciones</li>
+            <li>Navegar la ruta asignada en Google Maps / Waze</li>
+            <li>Finalizar la tarea con Completado o Reportar un problema</li>
+            <li>Usar SOS solo en emergencias</li>
+            <li>Repetir el ciclo para nuevas asignaciones</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Descripción del Servicio</h2>
+        <p>OnTime es una plataforma tecnológica que permite:</p>
+        <ul>
+            <li>Asignación de rutas y tareas a conductores o personal en campo.</li>
+            <li>Gestión de paradas (stops) y secuencias de trabajo optimizadas.</li>
+            <li>Seguimiento operativo en tiempo real desde un centro de control.</li>
+            <li>Coordinación eficiente entre el centro de operaciones y el personal ejecutor.</li>
+            <li>Envío de notificaciones operativas y alertas.</li>
+        </ul>
+        <p>Importante: La Plataforma no presta servicios de transporte directamente. Actúa como herramienta tecnológica para empresas y organizaciones que gestionan sus propios conductores, vehículos o personal en tareas secuenciales.</p>
+    </div>
+
+    <div class="section">
+        <h2>8. Usuarios</h2>
+        <ul>
+            <li>Empresas que gestionan flotas internas, transporte corporativo, distribución de productos, mantenimiento técnico, seguridad o cualquier operación que implique desplazamiento organizado de personal.</li>
+            <li>Conductores, técnicos, personal operativo o supervisores autorizados por dichas empresas.</li>
+            <li>Personal de coordinación o supervisión encargado de asignar tareas y monitorear cumplimiento.</li>
+        </ul>
+        <p>Cada usuario es responsable del uso adecuado de su cuenta y credenciales de acceso. La Plataforma debe ser utilizada únicamente para fines laborales o autorizados por la organización correspondiente.</p>
+    </div>
+
+    <div class="section">
+        <h2>9. Uso de Ubicación y Emergencia</h2>
+        <ul>
+            <li>Optimizar rutas asignadas.</li>
+            <li>Confirmar cumplimiento de paradas.</li>
+            <li>Permitir monitoreo operativo por parte del centro de control.</li>
+        </ul>
+        <p>Emergencias (Botón SOS): La aplicación permite notificar al centro de control en situaciones críticas. La última ubicación disponible se envía cuando haya conectividad y la función solo tiene fines operativos y de seguridad.</p>
+    </div>
+
+    <div class="section">
+        <h2>10. Notificaciones</h2>
+        <ul>
+            <li>Nuevas rutas asignadas.</li>
+            <li>Cambios en rutas previamente asignadas.</li>
+            <li>Alertas operativas o mensajes de seguridad del centro de control.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>11. Recopilación de Datos y Privacidad</h2>
+        <ul>
+            <li>Correo electrónico y credenciales de acceso.</li>
+            <li>Token de notificación (FCM) para comunicación operativa.</li>
+            <li>Rutas asignadas, horarios y paradas.</li>
+            <li>Ubicación del conductor (solo con permisos otorgados).</li>
+        </ul>
+        <p>La información recopilada será utilizada únicamente con fines operativos y de coordinación logística. No se compartirá con terceros externos a la empresa que gestiona la flota.</p>
+    </div>
+
+    <div class="section">
+        <h2>12. Consentimiento</h2>
+        <p>Al utilizar OnTime, usted otorga su consentimiento para la recopilación, almacenamiento y uso de los datos mencionados, según lo descrito en estos Términos y Condiciones.</p>
+    </div>
+
+    <div class="section">
+        <h2>13. Responsabilidades del Usuario</h2>
+        <ul>
+            <li>Utilizar la Plataforma únicamente para fines laborales autorizados.</li>
+            <li>No manipular ni alterar la información del sistema.</li>
+            <li>No compartir sus credenciales con terceros.</li>
+            <li>Cumplir con las normas de tránsito y seguridad vial.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>14. Limitación de Responsabilidad</h2>
+        <ul>
+            <li>Fallas en conectividad a Internet.</li>
+            <li>Interrupciones temporales del servicio.</li>
+            <li>Uso indebido de la aplicación por parte de los usuarios.</li>
+            <li>Incumplimientos laborales entre la empresa y los conductores.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>15. Propiedad Intelectual</h2>
+        <p>La Plataforma, su diseño, código, funcionalidades y marca son propiedad de su titular y están protegidos por la legislación aplicable.</p>
+    </div>
+
+    <div class="section">
+        <h2>16. Modificaciones</h2>
+        <p>OnTime se reserva el derecho de modificar estos términos en cualquier momento. Las modificaciones serán notificadas dentro de la aplicación o mediante actualización de este documento.</p>
+    </div>
+
+    <div class="section">
+        <h2>17. Legislación Aplicable</h2>
+        <p>Estos términos se regirán por las leyes de Colombia.</p>
+    </div>
+
+    <div class="section">
+        <h2>18. Contacto</h2>
+        <p>Si tiene preguntas sobre estos Términos y Condiciones, puede contactarnos escribiendo a: <a href="mailto:desarrolladorvip@gmail.com">desarrolladorvip@gmail.com</a></p>
+    </div>
+
+    <div class="section">
+        <h2>19. Sistema de Calificación y Aprobación</h2>
+        <ul>
+            <li>OnTime puede incluir un sistema de calificación para evaluar el desempeño de usuarios, equipos logísticos o asignaciones completadas.</li>
             <li>Las calificaciones pueden ser asignadas por supervisores, administradores o automáticamente por la plataforma según criterios predefinidos.</li>
-            <li>La administración tiene autoridad para aceptar, rechazar o ajustar tareas, rutas o usuarios basándose en estas calificaciones.</li>
-            <li>La calificación no garantiza la aprobación automática de tareas; la validación final siempre corresponde a la administración.</li>
-            <li>Las calificaciones se utilizarán con fines de seguimiento operativo, control de calidad y mejora del desempeño, respetando la confidencialidad de los datos.</li>
+            <li>La administración del equipo logístico tendrá la autoridad para aceptar, rechazar o ajustar tareas, rutas o usuarios basándose en las calificaciones recibidas.</li>
+            <li>La calificación no garantiza automáticamente la aprobación de tareas o asignaciones; la validación final siempre corresponde a la administración.</li>
+            <li>Los usuarios reconocen que las calificaciones se utilizarán con fines de seguimiento operativo, control de calidad y mejora del desempeño, respetando la confidencialidad de los datos internos.</li>
         </ul>
     </div>
-</div>
+
+    <div class="section">
+        <h2>20. Créditos y Retribuciones</h2>
+        <ul>
+            <li>Los íconos y recursos visuales utilizados en OnTime incluyen elementos gratuitos obtenidos de FlatIcon.</li>
+            <li>Se reconoce especialmente el trabajo de Abdul-Aziz por algunos de los íconos empleados en la plataforma.</li>
+            <li>Todo el contenido de terceros se usa siguiendo las licencias correspondientes y respetando los derechos de autor.</li>
+            <li>La plataforma se compromete a dar el debido crédito y respetar la propiedad intelectual de los creadores de recursos gratuitos y de pago.</li>
+        </ul>
     </div>
+
+    <div class="section">
+        <h2>21. Servicios Externos</h2>
+        <ul>
+            <li>OnTime utiliza servicios externos como Firebase para funcionalidades de autenticación, bases de datos en tiempo real, notificaciones push y análisis de uso.</li>
+            <li>Estos servicios pueden recopilar datos de manera automatizada, de acuerdo con sus políticas de privacidad y condiciones de uso.</li>
+            <li>La información recopilada a través de estos servicios se utiliza únicamente para mejorar la funcionalidad de la app, garantizar la seguridad y optimizar la experiencia del usuario.</li>
+            <li>Los usuarios pueden revisar las políticas de privacidad de Firebase en: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+    </div>
+
+</div>
+</div>
 
 <footer>
 © 2026 OnTime. Plataforma tecnológica de optimización logística.
