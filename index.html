@@ -1,393 +1,1825 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Términos y Condiciones | OnTime</title>
-<meta name="description" content="Términos y Condiciones oficiales de la plataforma logística OnTime">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Términos y Política de Privacidad | OnTime</title>
 
-<style>
-/* Evita que URLs largas se desborden */
-section ul li a,
-section ul li {
-    word-break: break-word;       /* rompe palabras largas */
-    overflow-wrap: break-word;    /* soporte adicional */
-}
+    <meta
+        name="description"
+        content="Términos y Condiciones de Uso y Política de Privacidad de OnTime. Información sobre cuentas, ubicación, disponibilidad, alertas SOS y derechos de protección de datos."
+    >
 
-:root {
-    --primary: #0f172a;
-    --accent: #2563eb;
-    --accent-light: #3b82f6;
-    --bg: #f8fafc;
-    --card: #ffffff;
-    --text: #1e293b;
-    --muted: #64748b;
-    --border: #e2e8f0;
-}
+    <meta name="theme-color" content="#0f172a">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-}
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --accent-light: #3b82f6;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
 
-.navbar {
-    position: sticky;
-    top: 0;
-    background: rgba(255, 255, 255, 0.85);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-    padding: 18px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.logo {
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--primary);
-}
+        html {
+            scroll-padding-top: 100px;
+        }
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--muted);
-    margin-left: 20px;
-    font-weight: 500;
-    transition: 0.2s ease;
-}
+        body {
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
 
-.nav-links a:hover {
-    color: var(--accent);
-}
+        a,
+        p,
+        li,
+        dd {
+            overflow-wrap: anywhere;
+        }
 
-.hero {
-    padding: 80px 20px 60px 20px;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
 
-.hero h1 {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
+        a:hover {
+            text-decoration: underline;
+        }
 
-.hero p {
-    color: var(--muted);
-    font-size: 18px;
-}
+        a:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 4px;
+        }
 
-.container {
-    max-width: 900px;
-    margin: 40px auto 80px auto;
-    padding: 0 20px;
-}
+        .skip-link {
+            position: absolute;
+            left: 16px;
+            top: -100px;
+            z-index: 2000;
+            padding: 10px 16px;
+            background: var(--primary);
+            color: #ffffff;
+        }
 
-.card {
-    background: var(--card);
-    padding: 40px;
-    border-radius: 0px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
-    border: 1px solid var(--border);
-}
+        .skip-link:focus {
+            top: 12px;
+        }
 
-.section {
-    margin-bottom: 50px;
-}
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.94);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            padding: 18px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            z-index: 1000;
+        }
 
-.section h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: var(--primary);
-}
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--primary);
+        }
 
-.section p {
-    margin-bottom: 15px;
-    color: var(--text);
-}
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 20px;
+        }
 
-.section ul {
-    padding-left: 20px;
-}
+        .nav-links a {
+            color: var(--muted);
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
 
-.section li {
-    margin-bottom: 10px;
-    color: var(--text);
-}
+        .nav-links a:hover {
+            color: var(--accent);
+        }
 
-.alert {
-    background: #fff7ed;
-    border-left: 4px solid #f97316;
-    padding: 15px;
-    border-radius: 6px;
-    margin-top: 15px;
-    color: #9a3412;
-}
+        .hero {
+            padding: 70px 20px 35px;
+            text-align: center;
+            max-width: 960px;
+            margin: auto;
+        }
 
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: var(--muted);
-    font-size: 14px;
-    border-top: 1px solid var(--border);
-}
+        .hero h1 {
+            font-size: clamp(30px, 4vw, 42px);
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 18px;
+            color: var(--primary);
+        }
 
-a {
-    color: var(--accent);
-    text-decoration: none;
-}
+        .hero > p {
+            color: var(--muted);
+            font-size: 18px;
+        }
 
-a:hover {
-    text-decoration: underline;
-}
+        .document-meta {
+            margin-top: 20px;
+            color: var(--muted);
+            font-size: 14px;
+        }
 
-.background-pattern {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.08) 0px, transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.08) 0px, transparent 40%),
-        linear-gradient(to right, rgba(37, 99, 235, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(37, 99, 235, 0.04) 1px, transparent 1px);
-    background-size: 
-        100% 100%,
-        100% 100%,
-        60px 60px,
-        60px 60px;
-}
+        .document-meta span {
+            display: inline-block;
+        }
 
-@media(max-width: 768px) {
-    .hero h1 {
-        font-size: 30px;
-    }
+        .container {
+            max-width: 960px;
+            margin: 30px auto 80px;
+            padding: 0 20px;
+        }
 
-    .card {
-        padding: 25px;
-    }
+        .card {
+            background: var(--card);
+            padding: 40px;
+            border-radius: 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+        }
 
-    .navbar {
-        padding: 15px 20px;
-    }
-}
-</style>
+        .identity {
+            padding: 22px;
+            background: #f1f5f9;
+            border: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        .identity h2 {
+            font-size: 19px;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+
+        .contact-details {
+            display: grid;
+            grid-template-columns: minmax(125px, 160px) minmax(0, 1fr);
+            gap: 8px 16px;
+        }
+
+        .contact-details dt {
+            font-weight: 600;
+        }
+
+        .contact-details dd {
+            min-width: 0;
+        }
+
+        .document-index {
+            border: 1px solid var(--border);
+            padding: 20px 22px;
+            margin-bottom: 35px;
+        }
+
+        .document-index h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+
+        .document-index ul {
+            padding-left: 20px;
+        }
+
+        .document-index li {
+            margin-bottom: 8px;
+        }
+
+        .part-heading {
+            font-size: 27px;
+            line-height: 1.35;
+            color: var(--primary);
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+            margin: 45px 0 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h3 {
+            font-size: 21px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .section p {
+            margin-bottom: 15px;
+        }
+
+        .section ul,
+        .section ol {
+            padding-left: 22px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .notice {
+            background: #eff6ff;
+            border-left: 4px solid var(--accent);
+            padding: 18px;
+            margin: 18px 0;
+        }
+
+        .notice p:last-child {
+            margin-bottom: 0;
+        }
+
+        .safety-notice {
+            background: #fff7ed;
+            border-left-color: #f97316;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            margin: 18px 0;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--border);
+            overflow-wrap: anywhere;
+        }
+
+        th {
+            background: #f1f5f9;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .request-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            padding: 12px 18px;
+            background: var(--accent);
+            color: #ffffff;
+            border: 1px solid var(--accent);
+            font-weight: 600;
+            text-align: center;
+            margin: 5px 0 15px;
+            max-width: 100%;
+        }
+
+        .request-button:hover {
+            background: #1d4ed8;
+            text-decoration: none;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            color: var(--muted);
+            font-size: 14px;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p + p {
+            margin-top: 8px;
+        }
+
+        .background-pattern {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background-image:
+                radial-gradient(
+                    circle at 20% 30%,
+                    rgba(37, 99, 235, 0.08) 0,
+                    transparent 40%
+                ),
+                radial-gradient(
+                    circle at 80% 70%,
+                    rgba(59, 130, 246, 0.08) 0,
+                    transparent 40%
+                ),
+                linear-gradient(
+                    to right,
+                    rgba(37, 99, 235, 0.04) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    to bottom,
+                    rgba(37, 99, 235, 0.04) 1px,
+                    transparent 1px
+                );
+            background-size:
+                100% 100%,
+                100% 100%,
+                60px 60px,
+                60px 60px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                position: static;
+                padding: 15px 20px;
+            }
+
+            .hero {
+                padding: 40px 20px 20px;
+            }
+
+            .hero > p {
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 25px;
+            }
+
+            .part-heading {
+                font-size: 24px;
+            }
+
+            .section h3 {
+                font-size: 20px;
+            }
+
+            html {
+                scroll-padding-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+
+            .card {
+                padding: 22px 18px;
+            }
+
+            .identity,
+            .document-index {
+                padding: 18px;
+            }
+
+            .contact-details {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 3px;
+            }
+
+            .contact-details dd {
+                margin-bottom: 10px;
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
+
+            .request-button {
+                width: 100%;
+            }
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+                font-size: 11pt;
+            }
+
+            .navbar,
+            .skip-link,
+            .background-pattern,
+            .document-index {
+                display: none;
+            }
+
+            .hero {
+                padding: 0 0 20px;
+                max-width: none;
+            }
+
+            .hero h1 {
+                font-size: 25pt;
+            }
+
+            .container {
+                max-width: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .card {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .part-heading,
+            .section h3 {
+                break-after: avoid;
+            }
+
+            a {
+                color: inherit;
+            }
+
+            .table-wrapper {
+                overflow: visible;
+            }
+
+            .request-button {
+                background: transparent;
+                color: #000000;
+                border: 1px solid #000000;
+            }
+
+            footer {
+                margin-top: 25px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<div class="background-pattern"></div>
+    <a class="skip-link" href="#contenido">
+        Ir al contenido
+    </a>
 
-<section class="hero">
-    <h1>Términos y Condiciones</h1>
-    <p>Marco legal que regula el uso de la plataforma tecnológica OnTime para optimización logística y coordinación operativa.</p>
-</section>
+    <div class="background-pattern" aria-hidden="true"></div>
 
-<div class="container">
-<div class="card">
+    <header class="navbar">
+        <a class="logo" href="#inicio" aria-label="OnTime: inicio del documento">
+            OnTime
+        </a>
 
-    <!-- Secciones completas 1 a 21 -->
-    <div class="section">
-        <h2>1. Introducción</h2>
-        <p>Bienvenido a OnTime.</p>
-        <p>Estos Términos y Condiciones regulan el uso de la aplicación móvil OnTime (en adelante, “la Plataforma”), diseñada para la optimización logística y guiado en tiempo real de operaciones que impliquen desplazamiento, entregas o tareas secuenciales. Al utilizar la aplicación, usted acepta cumplir con estos términos. Si no está de acuerdo, debe abstenerse de utilizar la aplicación.</p>
-    </div>
+        <nav class="nav-links" aria-label="Navegación del documento">
+            <a href="#terminos">Términos</a>
+            <a href="#privacidad">Privacidad</a>
+            <a href="#eliminacion-cuenta">Eliminar cuenta</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-    <div class="section">
-        <h2>2. Registro e Inicio de Sesión</h2>
-        <ul>
-            <li>Antes de registrarte, debes conocer el equipo logístico con el que trabajarás, asignado por el administrador o centro de control.</li>
-            <li>También puedes crear tu propio equipo logístico, pero deberás contactar al desarrollador para obtener credenciales válidas.</li>
-            <li>Para ingresar: Correo electrónico, Contraseña, Nombre del equipo logístico o empresa.</li>
-            <li>Una vez iniciada la sesión correctamente, podrás recibir asignaciones de tareas según lo determine el administrador.</li>
-        </ul>
-    </div>
+    <main id="contenido">
+        <section class="hero" id="inicio" aria-labelledby="document-title">
+            <h1 id="document-title">
+                Términos de Uso y Política de Privacidad
+            </h1>
 
-    <div class="section">
-        <h2>3. Recepción de Asignaciones</h2>
-        <ul>
-            <li>Cuando el administrador asigne rutas o tareas, recibirás una notificación en tu teléfono (asegúrate de aceptar notificaciones).</li>
-            <li>Al abrir la notificación, podrás ver todas las rutas asignadas a tu equipo.</li>
-            <li>Para comenzar una ruta: Presiona “Navegar”. La app te redirigirá a Google Maps o Waze con la ruta asignada.</li>
-        </ul>
-    </div>
+            <p>
+                Información sobre el uso de OnTime, la coordinación
+                operativa y el tratamiento de datos personales.
+            </p>
 
-    <div class="section">
-        <h2>4. Completado de Tareas</h2>
-        <ul>
-            <li>Cuando termines la asignación, tienes dos opciones: Completado (marca la tarea como finalizada) o Reportar un problema (notifica cualquier incidencia con la asignación).</li>
-            <li>⚠️ El botón SOS es diferente y solo se usa en emergencias reales, no para reportar problemas o completar rutas.</li>
-        </ul>
-    </div>
+            <div class="document-meta">
+                <span>Versión 1.1</span>
+                <span aria-hidden="true"> · </span>
+                <span>
+                    Última actualización:
+                    <time datetime="2026-11-02">2 de noviembre de 2026</time>
+                </span>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>5. Uso por Terceros</h2>
-        <ul>
-            <li>La app no debe ser usada por personas ajenas al equipo logístico o sin credenciales oficiales.</li>
-            <li>Toda asignación está vinculada a un equipo y administrador específicos.</li>
-            <li>El uso de la app por terceros puede causar errores en asignaciones y seguimiento operativo.</li>
-        </ul>
-    </div>
+        <div class="container">
+            <article class="card">
 
-    <div class="section">
-        <h2>6. Resumen del Flujo</h2>
-        <ul>
-            <li>Obtener credenciales del administrador / crear tu equipo con autorización del desarrollador</li>
-            <li>Registrarte e iniciar sesión con correo, contraseña y nombre del equipo</li>
-            <li>Recibir notificaciones de asignaciones</li>
-            <li>Navegar la ruta asignada en Google Maps / Waze</li>
-            <li>Finalizar la tarea con Completado o Reportar un problema</li>
-            <li>Usar SOS solo en emergencias</li>
-            <li>Repetir el ciclo para nuevas asignaciones</li>
-        </ul>
-    </div>
+                <section class="identity" aria-labelledby="responsable-heading">
+                    <h2 id="responsable-heading">
+                        Identificación y contacto
+                    </h2>
 
-    <div class="section">
-        <h2>7. Descripción del Servicio</h2>
-        <p>OnTime es una plataforma tecnológica que permite:</p>
-        <ul>
-            <li>Asignación de rutas y tareas a conductores o personal en campo.</li>
-            <li>Gestión de paradas (stops) y secuencias de trabajo optimizadas.</li>
-            <li>Seguimiento operativo en tiempo real desde un centro de control.</li>
-            <li>Coordinación eficiente entre el centro de operaciones y el personal ejecutor.</li>
-            <li>Envío de notificaciones operativas y alertas.</li>
-        </ul>
-        <p>Importante: La Plataforma no presta servicios de transporte directamente. Actúa como herramienta tecnológica para empresas y organizaciones que gestionan sus propios conductores, vehículos o personal en tareas secuenciales.</p>
-    </div>
+                    <dl class="contact-details">
+                        <dt>Plataforma</dt>
+                        <dd>OnTime</dd>
 
-    <div class="section">
-        <h2>8. Usuarios</h2>
-        <ul>
-            <li>Empresas que gestionan flotas internas, transporte corporativo, distribución de productos, mantenimiento técnico, seguridad o cualquier operación que implique desplazamiento organizado de personal.</li>
-            <li>Conductores, técnicos, personal operativo o supervisores autorizados por dichas empresas.</li>
-            <li>Personal de coordinación o supervisión encargado de asignar tareas y monitorear cumplimiento.</li>
-        </ul>
-        <p>Cada usuario es responsable del uso adecuado de su cuenta y credenciales de acceso. La Plataforma debe ser utilizada únicamente para fines laborales o autorizados por la organización correspondiente.</p>
-    </div>
+                        <dt>Responsable</dt>
+                        <dd>DAVID TRILLERO</dd>
 
-    <div class="section">
-        <h2>9. Uso de Ubicación y Emergencia</h2>
-        <ul>
-            <li>Optimizar rutas asignadas.</li>
-            <li>Confirmar cumplimiento de paradas.</li>
-            <li>Permitir monitoreo operativo por parte del centro de control.</li>
-        </ul>
-        <p>Emergencias (Botón SOS): La aplicación permite notificar al centro de control en situaciones críticas. La última ubicación disponible se envía cuando haya conectividad y la función solo tiene fines operativos y de seguridad.</p>
-    </div>
+                        <dt>Dirección</dt>
+                        <dd>
+                            Calle 14 # 15-82, Fonseca,
+                            La Guajira, Colombia.
+                        </dd>
 
-    <div class="section">
-        <h2>10. Notificaciones</h2>
-        <ul>
-            <li>Nuevas rutas asignadas.</li>
-            <li>Cambios en rutas previamente asignadas.</li>
-            <li>Alertas operativas o mensajes de seguridad del centro de control.</li>
-        </ul>
-    </div>
+                        <dt>Teléfono</dt>
+                        <dd>
+                            <a href="tel:+573207537904">
+                                +57 320 7537904
+                            </a>
+                        </dd>
 
-    <div class="section">
-        <h2>11. Recopilación de Datos y Privacidad</h2>
-        <ul>
-            <li>Correo electrónico y credenciales de acceso.</li>
-            <li>Token de notificación (FCM) para comunicación operativa.</li>
-            <li>Rutas asignadas, horarios y paradas.</li>
-            <li>Ubicación del conductor (solo con permisos otorgados).</li>
-        </ul>
-        <p>La información recopilada será utilizada únicamente con fines operativos y de coordinación logística. No se compartirá con terceros externos a la empresa que gestiona la flota.</p>
-    </div>
+                        <dt>Correo</dt>
+                        <dd>
+                            <a href="mailto:desarrolladorvip@gmail.com">
+                                desarrolladorvip@gmail.com
+                            </a>
+                        </dd>
+                    </dl>
+                </section>
 
-    <div class="section">
-        <h2>12. Consentimiento</h2>
-        <p>Al utilizar OnTime, usted otorga su consentimiento para la recopilación, almacenamiento y uso de los datos mencionados, según lo descrito en estos Términos y Condiciones.</p>
-    </div>
+                <nav class="document-index" aria-labelledby="index-heading">
+                    <h2 id="index-heading">Contenido</h2>
 
-    <div class="section">
-        <h2>13. Responsabilidades del Usuario</h2>
-        <ul>
-            <li>Utilizar la Plataforma únicamente para fines laborales autorizados.</li>
-            <li>No manipular ni alterar la información del sistema.</li>
-            <li>No compartir sus credenciales con terceros.</li>
-            <li>Cumplir con las normas de tránsito y seguridad vial.</li>
-        </ul>
-    </div>
+                    <ul>
+                        <li>
+                            <a href="#terminos">
+                                I. Términos y Condiciones de Uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#privacidad">
+                                II. Política de Privacidad y Tratamiento
+                                de Datos Personales
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#derechos">
+                                Derechos, consultas y reclamos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#eliminacion-cuenta">
+                                Solicitud de eliminación de cuenta y datos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto">
+                                III. Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-    <div class="section">
-        <h2>14. Limitación de Responsabilidad</h2>
-        <ul>
-            <li>Fallas en conectividad a Internet.</li>
-            <li>Interrupciones temporales del servicio.</li>
-            <li>Uso indebido de la aplicación por parte de los usuarios.</li>
-            <li>Incumplimientos laborales entre la empresa y los conductores.</li>
-        </ul>
-    </div>
+                <h2 class="part-heading" id="terminos">
+                    I. Términos y Condiciones de Uso
+                </h2>
 
-    <div class="section">
-        <h2>15. Propiedad Intelectual</h2>
-        <p>La Plataforma, su diseño, código, funcionalidades y marca son propiedad de su titular y están protegidos por la legislación aplicable.</p>
-    </div>
+                <section class="section">
+                    <h3>1. Objeto y ámbito de aplicación</h3>
 
-    <div class="section">
-        <h2>16. Modificaciones</h2>
-        <p>OnTime se reserva el derecho de modificar estos términos en cualquier momento. Las modificaciones serán notificadas dentro de la aplicación o mediante actualización de este documento.</p>
-    </div>
+                    <p>
+                        Estos Términos y Condiciones regulan el acceso
+                        y uso de la aplicación móvil, el panel web y
+                        la aplicación de escritorio OnTime, denominados
+                        conjuntamente «la Plataforma».
+                    </p>
 
-    <div class="section">
-        <h2>17. Legislación Aplicable</h2>
-        <p>Estos términos se regirán por las leyes de Colombia.</p>
-    </div>
+                    <p>
+                        OnTime facilita la coordinación de equipos,
+                        la asignación de rutas y tareas, la gestión
+                        de paradas, la consulta de disponibilidad y
+                        la comunicación de novedades y alertas operativas.
+                    </p>
 
-    <div class="section">
-        <h2>18. Contacto</h2>
-        <p>Si tiene preguntas sobre estos Términos y Condiciones, puede contactarnos escribiendo a: <a href="mailto:desarrolladorvip@gmail.com">desarrolladorvip@gmail.com</a></p>
-    </div>
+                    <p>
+                        Al aceptar estos términos, el usuario se
+                        compromete a utilizar la Plataforma conforme
+                        a sus disposiciones, a las autorizaciones de
+                        su organización y a la legislación aplicable.
+                    </p>
 
-    <div class="section">
-        <h2>19. Sistema de Calificación y Aprobación</h2>
-        <ul>
-            <li>OnTime puede incluir un sistema de calificación para evaluar el desempeño de usuarios, equipos logísticos o asignaciones completadas.</li>
-            <li>Las calificaciones pueden ser asignadas por supervisores, administradores o automáticamente por la plataforma según criterios predefinidos.</li>
-            <li>La administración del equipo logístico tendrá la autoridad para aceptar, rechazar o ajustar tareas, rutas o usuarios basándose en las calificaciones recibidas.</li>
-            <li>La calificación no garantiza automáticamente la aprobación de tareas o asignaciones; la validación final siempre corresponde a la administración.</li>
-            <li>Los usuarios reconocen que las calificaciones se utilizarán con fines de seguimiento operativo, control de calidad y mejora del desempeño, respetando la confidencialidad de los datos internos.</li>
-        </ul>
-    </div>
+                    <p>
+                        La aceptación de estos términos no sustituye
+                        las autorizaciones específicas para el
+                        tratamiento de datos personales cuando
+                        sean exigibles.
+                    </p>
+                </section>
 
-    <div class="section">
-        <h2>20. Créditos y Retribuciones</h2>
-        <ul>
-            <li>Los íconos y recursos visuales utilizados en OnTime incluyen elementos gratuitos obtenidos de FlatIcon.</li>
-            <li>Se reconoce especialmente el trabajo de Abdul-Aziz por algunos de los íconos empleados en la plataforma.</li>
-            <li>Todo el contenido de terceros se usa siguiendo las licencias correspondientes y respetando los derechos de autor.</li>
-            <li>La plataforma se compromete a dar el debido crédito y respetar la propiedad intelectual de los creadores de recursos gratuitos y de pago.</li>
-        </ul>
-    </div>
+                <section class="section">
+                    <h3>2. Naturaleza del servicio</h3>
 
-    <div class="section">
-        <h2>21. Servicios Externos</h2>
-        <ul>
-            <li>OnTime utiliza servicios externos para funcionalidades de autenticación, bases de datos en tiempo real, notificaciones push y análisis de uso.</li>
-            <li>Estos servicios pueden recopilar datos de manera automatizada, de acuerdo con sus políticas de privacidad y condiciones de uso.</li>
-            <li>La información recopilada a través de estos servicios se utiliza únicamente para mejorar la funcionalidad de la app, garantizar la seguridad y optimizar la experiencia del usuario.</li>
-        </ul>
-    </div>
+                    <p>
+                        OnTime proporciona herramientas tecnológicas
+                        para organizaciones que coordinan conductores,
+                        técnicos, repartidores u otro personal
+                        autorizado en campo.
+                    </p>
 
-</div>
-</div>
+                    <p>
+                        El uso de la Plataforma no constituye, por sí
+                        mismo, un servicio de transporte, mensajería,
+                        contratación de personal, aseguramiento o
+                        atención de emergencias.
+                    </p>
 
-<footer>
-© 2026 OnTime. Plataforma tecnológica de optimización logística.
-</footer>
+                    <p>
+                        La organización que administra cada equipo
+                        conserva las responsabilidades que correspondan
+                        a su actividad, a sus decisiones operativas y
+                        a sus relaciones con trabajadores, contratistas,
+                        clientes y destinatarios.
+                    </p>
 
+                    <p>
+                        Las funcionalidades disponibles pueden variar
+                        según la versión, los permisos de acceso y
+                        los servicios habilitados.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>3. Registro, cuentas y equipos</h3>
+
+                    <p>
+                        El acceso requiere una cuenta y la vinculación
+                        al equipo u organización correspondiente.
+                    </p>
+
+                    <p>
+                        Según la modalidad habilitada, podrán solicitarse
+                        correo electrónico, contraseña, nombre y datos
+                        de identificación del equipo. La creación y
+                        administración de equipos requiere autorización.
+                    </p>
+
+                    <p>Cada usuario debe:</p>
+
+                    <ul>
+                        <li>
+                            Proporcionar información exacta y mantenerla
+                            actualizada.
+                        </li>
+                        <li>
+                            Proteger sus credenciales y evitar compartirlas.
+                        </li>
+                        <li>
+                            Utilizar únicamente las cuentas y equipos
+                            para los que tenga autorización.
+                        </li>
+                        <li>
+                            Informar oportunamente sobre accesos no
+                            reconocidos o pérdida de control de su cuenta.
+                        </li>
+                        <li>
+                            Abstenerse de acceder a información de otras
+                            organizaciones sin permiso.
+                        </li>
+                    </ul>
+
+                    <p>
+                        La organización administra las autorizaciones
+                        operativas de su personal conforme a los
+                        roles disponibles.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>4. Asignación de rutas, tareas y paradas</h3>
+
+                    <p>
+                        Los administradores autorizados pueden crear,
+                        asignar y actualizar rutas, tareas, paradas
+                        e instrucciones.
+                    </p>
+
+                    <p>
+                        El personal en campo podrá consultar la
+                        información habilitada, recibir notificaciones
+                        y registrar los estados disponibles, como
+                        finalización o reporte de problemas.
+                    </p>
+
+                    <p>
+                        Los datos ingresados deben ser veraces y
+                        pertinentes. Marcar una tarea como completada
+                        constituye un registro operativo y no reemplaza
+                        las comprobaciones adicionales que deba
+                        realizar la organización.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>5. Navegación y seguridad vial</h3>
+
+                    <p>
+                        OnTime puede abrir aplicaciones externas de
+                        navegación, como Google Maps o Waze, con el
+                        destino configurado.
+                    </p>
+
+                    <p>
+                        El usuario debe verificar el destino y considerar
+                        las condiciones reales de la vía, restricciones
+                        de acceso y normas de tránsito. Las indicaciones
+                        de navegación no sustituyen su criterio ni
+                        las instrucciones de las autoridades.
+                    </p>
+
+                    <p>
+                        No debe manipularse la Plataforma mientras se
+                        conduce. Las consultas y acciones deben
+                        realizarse en condiciones seguras.
+                    </p>
+
+                    <p>
+                        La disponibilidad y exactitud de mapas, tráfico
+                        y navegación dependen también de servicios externos.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>6. Solicitudes y confirmaciones de disponibilidad</h3>
+
+                    <p>
+                        La Plataforma permite solicitar al personal
+                        autorizado que confirme su disponibilidad.
+                    </p>
+
+                    <p>
+                        La acción «Consultar @todos», «Consultar a todos»
+                        o equivalente se refiere al equipo seleccionado.
+                        No implica una solicitud a todos los usuarios
+                        de OnTime.
+                    </p>
+
+                    <p>
+                        Las solicitudes colectivas pueden comprender
+                        al equipo completo, independientemente de los
+                        filtros visuales de nombre o estado. El sistema
+                        puede omitir usuarios que no cumplan las
+                        condiciones operativas de la solicitud.
+                    </p>
+
+                    <p>
+                        Habilitar la función o registrar una solicitud
+                        no acredita que el aviso haya sido entregado,
+                        leído o confirmado.
+                    </p>
+
+                    <p>
+                        La disponibilidad debe interpretarse junto con
+                        su estado, fecha de confirmación y vencimiento.
+                        No equivale por sí sola a la aceptación de una
+                        tarea, contrato o servicio.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>7. Ubicación y búsqueda de personal cercano</h3>
+
+                    <p>
+                        Las funciones habilitadas pueden utilizar
+                        ubicaciones recibidas del dispositivo para
+                        apoyar la coordinación, la consulta de
+                        disponibilidad y la gestión de alertas.
+                    </p>
+
+                    <p>
+                        La ubicación mostrada puede corresponder a
+                        una captura anterior. Deben revisarse su fecha,
+                        antigüedad y precisión disponible antes de
+                        tomar decisiones.
+                    </p>
+
+                    <p>
+                        El buscador de OnTimers cercanos presenta
+                        candidatos conforme al punto de servicio y
+                        a los criterios operativos seleccionados.
+                        Las distancias mostradas son aproximadas y
+                        en línea recta; no representan recorridos
+                        por carretera ni tiempos de llegada.
+                    </p>
+
+                    <p>
+                        Seleccionar un candidato en el buscador no
+                        significa, por sí solo, que se haya guardado,
+                        activado o asignado un servicio.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>8. Botón SOS</h3>
+
+                    <p>
+                        El botón SOS está destinado a comunicar
+                        situaciones reales que afecten la seguridad
+                        o integridad del usuario. No debe utilizarse
+                        para retrasos, consultas o novedades ordinarias.
+                    </p>
+
+                    <p>
+                        Una alerta puede incluir identidad, contacto,
+                        placa, fecha, hora y coordenadas disponibles,
+                        según los datos transmitidos.
+                    </p>
+
+                    <p>
+                        La recepción y visualización dependen de
+                        conectividad, permisos, funcionamiento del
+                        dispositivo, servicios tecnológicos y
+                        disponibilidad del personal de control.
+                        Una ubicación almacenada no garantiza
+                        la posición actual.
+                    </p>
+
+                    <p>
+                        OnTime no garantiza monitoreo permanente,
+                        respuesta inmediata, rescate, atención médica
+                        o intervención de autoridades.
+                    </p>
+
+                    <p>
+                        La organización debe contar con procedimientos
+                        humanos para revisar alertas, contactar al
+                        usuario y escalar la situación. Marcar una
+                        alerta como resuelta es un estado administrativo
+                        y no demuestra por sí solo que la persona
+                        esté fuera de peligro.
+                    </p>
+
+                    <aside class="notice safety-notice">
+                        <p>
+                            Ante peligro inmediato, el usuario debe
+                            acudir a los canales oficiales de emergencia
+                            de su localidad y no depender exclusivamente
+                            de OnTime.
+                        </p>
+                    </aside>
+                </section>
+
+                <section class="section">
+                    <h3>9. Notificaciones y avisos sonoros</h3>
+
+                    <p>
+                        La Plataforma puede emitir comunicaciones sobre
+                        asignaciones, cambios, solicitudes de
+                        disponibilidad y alertas.
+                    </p>
+
+                    <p>
+                        Su recepción depende de permisos, configuración,
+                        conectividad y servicios de notificación.
+                    </p>
+
+                    <p>
+                        Los sonidos del panel pueden requerir activación
+                        y verse afectados por el volumen o las
+                        restricciones del dispositivo. La ausencia
+                        de sonido no demuestra ausencia de novedades.
+                    </p>
+
+                    <p>
+                        Marcar una novedad como vista no modifica
+                        automáticamente la disponibilidad ni resuelve
+                        una alerta SOS.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>10. Obligaciones de las organizaciones</h3>
+
+                    <p>Cada organización debe:</p>
+
+                    <ul>
+                        <li>
+                            Utilizar la Plataforma para fines lícitos
+                            y autorizados.
+                        </li>
+                        <li>
+                            Administrar adecuadamente los accesos
+                            de su personal.
+                        </li>
+                        <li>
+                            Mantener actualizados los datos e
+                            instrucciones operativas.
+                        </li>
+                        <li>
+                            Informar sobre el tratamiento de datos y
+                            obtener las autorizaciones que correspondan.
+                        </li>
+                        <li>
+                            Incorporar datos de clientes y destinatarios
+                            únicamente cuando sean necesarios y exista
+                            fundamento para tratarlos.
+                        </li>
+                        <li>
+                            Cumplir las obligaciones laborales,
+                            contractuales y sectoriales aplicables.
+                        </li>
+                        <li>
+                            Disponer de procedimientos alternos ante
+                            fallas y emergencias.
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h3>11. Conductas no permitidas</h3>
+
+                    <p>No se permite:</p>
+
+                    <ul>
+                        <li>
+                            Suplantar personas o utilizar credenciales ajenas.
+                        </li>
+                        <li>
+                            Registrar ubicaciones, estados o alertas
+                            deliberadamente falsos.
+                        </li>
+                        <li>
+                            Extraer o divulgar datos sin autorización.
+                        </li>
+                        <li>
+                            Intentar eludir controles de acceso o
+                            alterar el funcionamiento de la Plataforma.
+                        </li>
+                        <li>
+                            Utilizar las funciones de ubicación para
+                            fines distintos de los informados.
+                        </li>
+                        <li>
+                            Introducir información de terceros que
+                            no sea necesaria para la operación.
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h3>12. Calificaciones e indicadores</h3>
+
+                    <p>
+                        Cuando estén habilitados, los indicadores y
+                        calificaciones podrán utilizarse para seguimiento
+                        operativo y control de calidad.
+                    </p>
+
+                    <p>
+                        La organización debe informar los criterios
+                        aplicables y permitir revisar información
+                        inexacta. Estos registros no constituyen
+                        por sí solos una decisión laboral ni
+                        garantizan la aprobación de tareas.
+                    </p>
+
+                    <p>
+                        Su utilización debe respetar la legislación
+                        y los derechos de las personas.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>13. Disponibilidad y responsabilidad</h3>
+
+                    <p>
+                        La Plataforma puede presentar interrupciones,
+                        mantenimiento, errores, información incompleta
+                        o fallas relacionadas con terceros.
+                    </p>
+
+                    <p>
+                        Las organizaciones deben mantener mecanismos
+                        alternos para operaciones críticas.
+                    </p>
+
+                    <p>
+                        La responsabilidad se determinará conforme
+                        a la ley, los hechos y los contratos aplicables.
+                        Estos términos no excluyen obligaciones o
+                        responsabilidades que legalmente no puedan
+                        limitarse, incluidas las propias del responsable
+                        de OnTime respecto de su software y tratamiento
+                        de datos.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>14. Suspensión y terminación</h3>
+
+                    <p>
+                        Los accesos podrán restringirse por uso no
+                        autorizado, riesgos de seguridad, incumplimientos,
+                        requerimientos legales o finalización de la
+                        relación con la organización.
+                    </p>
+
+                    <p>
+                        Cuando corresponda y sea posible, se informará
+                        al usuario sobre la medida.
+                    </p>
+
+                    <p>
+                        La suspensión de acceso no equivale a la
+                        eliminación de la cuenta ni de sus datos.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>15. Propiedad intelectual y recursos externos</h3>
+
+                    <p>
+                        Los derechos sobre los componentes propios de
+                        OnTime corresponden a sus respectivos titulares.
+                        El acceso a la Plataforma no transfiere la
+                        propiedad del software, código, marca o diseño.
+                    </p>
+
+                    <p>
+                        Las bibliotecas, iconos, tipografías y demás
+                        recursos de terceros conservan sus licencias
+                        y derechos.
+                    </p>
+
+                    <p>
+                        Los recursos visuales utilizados incluyen
+                        elementos de Flaticon, con reconocimiento
+                        a Abdul-Aziz por los iconos de su autoría
+                        incorporados en la Plataforma.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>16. Condiciones comerciales</h3>
+
+                    <p>
+                        Los planes, tarifas, límites, implementación
+                        y soporte se definirán mediante las condiciones
+                        comerciales o contratos correspondientes.
+                    </p>
+
+                    <p>
+                        Este documento no establece por sí solo cobros
+                        que no hayan sido informados y aceptados.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>17. Modificaciones y legislación aplicable</h3>
+
+                    <p>
+                        Los términos podrán actualizarse por cambios
+                        legales, técnicos u operativos. La versión
+                        disponible indicará su fecha de actualización.
+                    </p>
+
+                    <p>
+                        Los cambios materiales se comunicarán por
+                        los canales disponibles y se solicitará nueva
+                        aceptación o autorización cuando corresponda.
+                    </p>
+
+                    <p>
+                        Se aplica la legislación colombiana, sin
+                        perjuicio de las normas imperativas pertinentes
+                        y del derecho de acudir a las autoridades
+                        competentes.
+                    </p>
+                </section>
+
+                <h2 class="part-heading" id="privacidad">
+                    II. Política de Privacidad y Tratamiento
+                    de Datos Personales
+                </h2>
+
+                <section class="section">
+                    <h3>1. Responsable y canales de atención</h3>
+
+                    <p>
+                        DAVID TRILLERO es el responsable de los
+                        tratamientos cuyos fines determine en
+                        relación con OnTime.
+                    </p>
+
+                    <address>
+                        <p>
+                            Dirección: Calle 14 # 15-82,
+                            Fonseca, La Guajira, Colombia.<br>
+                            Teléfono:
+                            <a href="tel:+573207537904">
+                                +57 320 7537904
+                            </a><br>
+                            Correo:
+                            <a href="mailto:desarrolladorvip@gmail.com">
+                                desarrolladorvip@gmail.com
+                            </a>
+                        </p>
+                    </address>
+
+                    <p>
+                        Las consultas y reclamos de protección de datos
+                        serán atendidos a través de este correo.
+                    </p>
+
+                    <p>
+                        Cuando una organización determine las finalidades
+                        del tratamiento de datos de su personal, clientes
+                        o destinatarios, podrá actuar como responsable,
+                        mientras el proveedor de OnTime actúa como
+                        encargado conforme a sus instrucciones y a
+                        los acuerdos aplicables.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>2. Marco de protección de datos</h3>
+
+                    <p>
+                        El tratamiento se rige por la Ley 1581 de 2012,
+                        las disposiciones pertinentes del Decreto 1074
+                        de 2015 y demás normas aplicables.
+                    </p>
+
+                    <p>
+                        Se observarán los principios de legalidad,
+                        finalidad, libertad, veracidad, transparencia,
+                        acceso restringido, seguridad y confidencialidad.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>3. Datos personales tratados</h3>
+
+                    <p>
+                        Según las funciones utilizadas, podrán
+                        tratarse las siguientes categorías:
+                    </p>
+
+                    <div class="table-wrapper">
+                        <table aria-label="Categorías de datos personales">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Categoría</th>
+                                    <th scope="col">Información</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Identificación y contacto</td>
+                                    <td>
+                                        Nombre, correo, teléfono,
+                                        identificador de cuenta, equipo
+                                        y placa del vehículo cuando
+                                        corresponda.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Autenticación</td>
+                                    <td>
+                                        Información necesaria para validar
+                                        acceso, sesiones e identificadores
+                                        gestionados por el servicio
+                                        de autenticación.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Notificaciones</td>
+                                    <td>
+                                        Tokens e información necesaria
+                                        para enviar avisos operativos.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Operación</td>
+                                    <td>
+                                        Rutas, paradas, direcciones,
+                                        contactos de destinatarios,
+                                        tareas, horarios, estados,
+                                        novedades e indicadores habilitados.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Disponibilidad</td>
+                                    <td>
+                                        Solicitudes, confirmaciones,
+                                        estados y fechas de vencimiento.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Ubicación</td>
+                                    <td>
+                                        Coordenadas, fecha de captura y
+                                        precisión cuando estén disponibles.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>SOS</td>
+                                    <td>
+                                        Identificación, contacto, hora,
+                                        ubicación disponible y estado
+                                        de la alerta.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Soporte</td>
+                                    <td>
+                                        Información proporcionada al
+                                        realizar consultas, reportar
+                                        incidentes o ejercer derechos.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>
+                        No deben enviarse contraseñas a los canales
+                        de soporte o privacidad.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>4. Finalidades del tratamiento</h3>
+
+                    <p>Los datos se utilizan para:</p>
+
+                    <ul>
+                        <li>Crear y administrar cuentas y equipos.</li>
+                        <li>Autenticar usuarios y gestionar accesos.</li>
+                        <li>Coordinar rutas, tareas y paradas.</li>
+                        <li>Enviar comunicaciones operativas.</li>
+                        <li>
+                            Consultar disponibilidad y apoyar búsquedas
+                            de personal cercano.
+                        </li>
+                        <li>
+                            Presentar destinos a servicios externos
+                            de navegación.
+                        </li>
+                        <li>Recibir y gestionar alertas SOS.</li>
+                        <li>
+                            Registrar estados, novedades e indicadores
+                            operativos.
+                        </li>
+                        <li>
+                            Atender soporte, consultas, reclamos y
+                            solicitudes de eliminación.
+                        </li>
+                        <li>
+                            Prevenir accesos no autorizados y cumplir
+                            obligaciones legales.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Los datos no deben utilizarse para finalidades
+                        incompatibles con las informadas sin el fundamento
+                        o autorización correspondiente.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>5. Autorización</h3>
+
+                    <p>
+                        Cuando sea exigible, el tratamiento requiere
+                        autorización previa, expresa e informada,
+                        obtenida mediante un mecanismo que permita
+                        su consulta posterior.
+                    </p>
+
+                    <p>
+                        La aceptación de los términos no reemplaza
+                        automáticamente esta autorización.
+                    </p>
+
+                    <p>
+                        Los permisos del dispositivo tampoco equivalen
+                        por sí solos a una autorización para cualquier
+                        uso de los datos.
+                    </p>
+
+                    <p>
+                        La organización que incorpore datos de su
+                        personal, clientes o destinatarios debe contar
+                        con las autorizaciones o fundamentos
+                        que correspondan.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>6. Datos de ubicación</h3>
+
+                    <p>
+                        Las funciones de ubicación requieren los permisos
+                        aplicables y se destinan a las funcionalidades
+                        operativas informadas.
+                    </p>
+
+                    <p>
+                        La información disponible depende del dispositivo,
+                        permisos, configuración, conectividad y servicios
+                        de posicionamiento. Puede faltar, ser imprecisa
+                        o estar desactualizada.
+                    </p>
+
+                    <p>
+                        La visualización de una coordenada no demuestra
+                        seguimiento continuo. En disponibilidad y SOS
+                        deben revisarse las fechas y referencias disponibles.
+                    </p>
+
+                    <p>
+                        El usuario puede gestionar los permisos desde
+                        la configuración de su dispositivo. Su
+                        desactivación puede impedir las funciones
+                        relacionadas, pero no elimina automáticamente
+                        los datos previamente almacenados.
+                    </p>
+
+                    <p>
+                        El uso de ubicación debe limitarse a las
+                        finalidades informadas y al personal autorizado.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>7. Acceso y proveedores tecnológicos</h3>
+
+                    <p>
+                        Los datos operativos pueden ser consultados por
+                        administradores y personal autorizado de la
+                        organización correspondiente.
+                    </p>
+
+                    <p>
+                        El proveedor de OnTime podrá acceder cuando
+                        resulte necesario para prestar soporte,
+                        administrar la Plataforma, atender solicitudes
+                        o cumplir obligaciones, conforme a los roles
+                        e instrucciones aplicables.
+                    </p>
+
+                    <p>
+                        La infraestructura incluye servicios de Google
+                        Firebase para autenticación, almacenamiento
+                        de información y notificaciones. El buscador
+                        utiliza Google Maps y las funciones de navegación
+                        pueden abrir aplicaciones externas como
+                        Google Maps o Waze.
+                    </p>
+
+                    <p>
+                        Las consultas a mapas y navegación pueden
+                        comunicar direcciones, destinos u otra información
+                        necesaria para ejecutar la función solicitada.
+                    </p>
+
+                    <p>
+                        Los servicios externos están sujetos también
+                        a las condiciones y políticas aplicables de
+                        sus proveedores.
+                    </p>
+
+                    <p>
+                        También podrán comunicarse datos a autoridades
+                        cuando exista fundamento legal.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>8. Tratamiento internacional</h3>
+
+                    <p>
+                        El uso de infraestructura tecnológica puede
+                        implicar procesamiento fuera de Colombia.
+                    </p>
+
+                    <p>
+                        Las transmisiones o transferencias internacionales
+                        deberán sujetarse a los requisitos legales
+                        aplicables y a las condiciones contractuales
+                        pertinentes.
+                    </p>
+
+                    <p>
+                        La aceptación de esta política no constituye
+                        una autorización ilimitada para comunicar
+                        datos a cualquier destinatario o finalidad.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>9. Almacenamiento local y correo recordado</h3>
+
+                    <p>
+                        El panel puede guardar localmente el último
+                        correo utilizado después de una autenticación
+                        correcta para mostrarlo nuevamente en el formulario.
+                    </p>
+
+                    <p>
+                        Esta función no guarda la contraseña y es
+                        distinta de la persistencia de sesión del
+                        servicio de autenticación.
+                    </p>
+
+                    <p>
+                        Cerrar sesión no elimina necesariamente el
+                        correo recordado. En equipos compartidos,
+                        otras personas que utilicen el mismo perfil
+                        podrían verlo.
+                    </p>
+
+                    <p>
+                        La eliminación de datos locales debe distinguirse
+                        de la eliminación de la cuenta y de la información
+                        almacenada en los servicios de OnTime.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>10. Seguridad</h3>
+
+                    <p>
+                        El responsable y las organizaciones deben aplicar
+                        medidas técnicas, humanas y administrativas
+                        apropiadas para proteger los datos y limitar
+                        accesos no autorizados.
+                    </p>
+
+                    <p>
+                        Los usuarios deben proteger sus dispositivos
+                        y credenciales e informar incidentes al canal
+                        de contacto.
+                    </p>
+
+                    <p>
+                        Ninguna medida garantiza seguridad absoluta.
+                        Esta circunstancia no elimina los deberes
+                        legales de protección ni la obligación de
+                        atender los incidentes que correspondan.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>11. Conservación y supresión</h3>
+
+                    <p>
+                        Los datos se conservarán durante el tiempo
+                        razonable y necesario para cumplir las finalidades
+                        informadas y las obligaciones legales o
+                        contractuales aplicables.
+                    </p>
+
+                    <p>
+                        Para determinar su conservación se considerarán
+                        la relación con el usuario u organización,
+                        la finalidad del registro, las solicitudes de
+                        los titulares y las necesidades justificadas
+                        de atención de reclamaciones o requerimientos
+                        legales.
+                    </p>
+
+                    <p>
+                        Cumplida la finalidad, y cuando no exista
+                        obligación de conservación, procederá su
+                        eliminación o anonimización según corresponda.
+                    </p>
+
+                    <p>
+                        No se establece una conservación indefinida
+                        por defecto ni se garantiza una eliminación
+                        automática a las 24 horas.
+                    </p>
+
+                    <p>
+                        Cuando deba conservarse información después de
+                        una solicitud de supresión, se informarán el
+                        motivo y el alcance de la retención.
+                    </p>
+                </section>
+
+                <section class="section" id="derechos">
+                    <h3>12. Derechos de los titulares</h3>
+
+                    <p>Los titulares pueden:</p>
+
+                    <ul>
+                        <li>Conocer, actualizar y rectificar sus datos.</li>
+                        <li>
+                            Acceder gratuitamente a ellos en los
+                            términos legales.
+                        </li>
+                        <li>
+                            Solicitar prueba de autorización
+                            cuando corresponda.
+                        </li>
+                        <li>
+                            Ser informados sobre el uso de su información.
+                        </li>
+                        <li>Presentar consultas y reclamos.</li>
+                        <li>
+                            Solicitar revocatoria de la autorización
+                            o supresión cuando proceda.
+                        </li>
+                        <li>
+                            Presentar quejas ante la Superintendencia
+                            de Industria y Comercio, una vez agotado
+                            el trámite previo exigible.
+                        </li>
+                    </ul>
+
+                    <p>
+                        La supresión o revocatoria puede no proceder
+                        respecto de información sometida a un deber
+                        legal o contractual de conservación.
+                    </p>
+                </section>
+
+                <section class="section" id="consultas-reclamos">
+                    <h3>13. Procedimiento de consultas y reclamos</h3>
+
+                    <p>
+                        Las solicitudes deben enviarse a
+                        <a href="mailto:desarrolladorvip@gmail.com">
+                            desarrolladorvip@gmail.com
+                        </a>,
+                        con el asunto «Datos personales – OnTime».
+                    </p>
+
+                    <p>La comunicación debe incluir:</p>
+
+                    <ul>
+                        <li>Nombre del solicitante.</li>
+                        <li>
+                            Correo asociado a la cuenta o información
+                            que permita localizar los datos.
+                        </li>
+                        <li>
+                            Descripción de la consulta o reclamo.
+                        </li>
+                        <li>Medio para recibir respuesta.</li>
+                        <li>
+                            Información necesaria para verificar identidad
+                            o representación, cuando corresponda.
+                        </li>
+                    </ul>
+
+                    <p>No se solicitará la contraseña.</p>
+
+                    <p>
+                        Las consultas se atenderán en un máximo de
+                        diez días hábiles desde su recibo. Cuando no
+                        sea posible, se informarán los motivos y una
+                        nueva fecha, sin superar cinco días hábiles
+                        adicionales al vencimiento del primer término.
+                    </p>
+
+                    <p>
+                        Los reclamos se atenderán en un máximo de
+                        quince días hábiles desde el día siguiente a
+                        su recibo. Cuando no sea posible, se informarán
+                        los motivos y una nueva fecha, sin superar
+                        ocho días hábiles adicionales al primer término.
+                    </p>
+
+                    <p>
+                        Si el reclamo está incompleto, se requerirá
+                        subsanación dentro de los cinco días siguientes
+                        a su recepción. Transcurridos dos meses desde
+                        el requerimiento sin subsanación, se
+                        entenderá desistido.
+                    </p>
+
+                    <p>
+                        Si quien recibe el reclamo no es competente,
+                        lo trasladará a quien corresponda en un máximo
+                        de dos días hábiles e informará al interesado.
+                    </p>
+
+                    <p>
+                        Recibido el reclamo completo, se incorporará
+                        la indicación «reclamo en trámite» y su motivo
+                        en la base correspondiente, en un máximo de
+                        dos días hábiles, hasta su resolución.
+                    </p>
+                </section>
+
+                <section class="section" id="eliminacion-cuenta">
+                    <h3>14. Eliminación de cuenta y datos asociados</h3>
+
+                    <p>
+                        El usuario puede solicitar la eliminación de su
+                        cuenta OnTime y de los datos personales asociados
+                        escribiendo a
+                        <a href="mailto:desarrolladorvip@gmail.com">
+                            desarrolladorvip@gmail.com
+                        </a>.
+                    </p>
+
+                    <p>
+                        Asunto:
+                        «Solicitud de eliminación de cuenta OnTime».
+                    </p>
+
+                    <p>
+                        Debe indicar el correo de la cuenta y, si lo
+                        conoce, el equipo al que pertenece.
+                        No debe enviar su contraseña.
+                    </p>
+
+                    <a
+                        class="request-button"
+                        href="mailto:desarrolladorvip@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20OnTime"
+                    >
+                        Solicitar eliminación por correo
+                    </a>
+
+                    <p>
+                        El botón abre la aplicación de correo configurada
+                        en su dispositivo. La solicitud se recibe cuando
+                        usted envía el mensaje; pulsar el botón no elimina
+                        la cuenta ni envía automáticamente la solicitud.
+                        También puede escribir directamente a la
+                        dirección indicada.
+                    </p>
+
+                    <p>
+                        La solicitud será verificada y tramitada conforme
+                        al procedimiento de protección de datos y a las
+                        obligaciones aplicables.
+                    </p>
+
+                    <p>
+                        La eliminación comprenderá la cuenta y los
+                        datos asociados respecto de los cuales proceda
+                        la supresión, como información de perfil,
+                        identificadores y registros vinculados.
+                    </p>
+
+                    <p>
+                        Si existe información que deba conservarse
+                        por una obligación legal o contractual aplicable,
+                        se informarán el alcance y los motivos.
+                        El tratamiento de registros operativos que
+                        también involucren a otras personas u
+                        organizaciones se evaluará conforme a sus
+                        derechos y a las obligaciones correspondientes.
+                    </p>
+
+                    <p>
+                        Desactivar una cuenta, cerrar sesión o
+                        desinstalar la aplicación no equivale
+                        por sí solo a eliminarla.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>15. Menores de edad y datos sensibles</h3>
+
+                    <p>
+                        OnTime está orientada a la coordinación de
+                        organizaciones y personal autorizado; no está
+                        dirigida específicamente a niños, niñas
+                        o adolescentes.
+                    </p>
+
+                    <p>
+                        Cualquier tratamiento de datos de menores debe
+                        respetar su interés superior y las condiciones
+                        legales especiales aplicables.
+                    </p>
+
+                    <p>
+                        No deben incorporarse datos sensibles innecesarios.
+                        Cuando un tratamiento de esta naturaleza
+                        resulte procedente, deberá informarse y
+                        cumplirse el régimen especial correspondiente.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h3>16. Vigencia y modificaciones</h3>
+
+                    <p>
+                        Esta versión se identifica con fecha
+                        2 de noviembre de 2026.
+                    </p>
+
+                    <p>
+                        La política podrá actualizarse por cambios
+                        normativos, técnicos u operativos. La versión
+                        vigente estará disponible por los canales
+                        de la Plataforma y los cambios materiales
+                        serán comunicados.
+                    </p>
+
+                    <p>
+                        Si se incorporan finalidades que requieran nueva
+                        autorización, esta deberá solicitarse antes
+                        del tratamiento correspondiente.
+                    </p>
+
+                    <p>
+                        Las bases de datos se mantendrán mientras
+                        subsistan las finalidades y obligaciones que
+                        justifiquen su tratamiento, conforme a los
+                        criterios de conservación de esta política.
+                    </p>
+                </section>
+
+                <h2 class="part-heading" id="contacto">
+                    III. Contacto
+                </h2>
+
+                <section class="section" aria-label="Datos de contacto">
+                    <p>
+                        Para consultas sobre uso de la Plataforma,
+                        soporte, privacidad, corrección de datos
+                        o eliminación de cuenta:
+                    </p>
+
+                    <address>
+                        <p>
+                            DAVID TRILLERO<br>
+                            OnTime<br>
+                            Calle 14 # 15-82<br>
+                            Fonseca, La Guajira, Colombia.
+                        </p>
+
+                        <p>
+                            Teléfono:
+                            <a href="tel:+573207537904">
+                                +57 320 7537904
+                            </a><br>
+
+                            Correo:
+                            <a href="mailto:desarrolladorvip@gmail.com">
+                                desarrolladorvip@gmail.com
+                            </a>
+                        </p>
+                    </address>
+                </section>
+
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            © 2026 OnTime.
+            Plataforma tecnológica de coordinación logística
+            y gestión operativa.
+        </p>
+
+        <p>
+            <a href="#terminos">Términos de uso</a>
+            ·
+            <a href="#privacidad">Política de privacidad</a>
+            ·
+            <a href="#eliminacion-cuenta">Eliminación de cuenta</a>
+        </p>
+    </footer>
 </body>
 </html>
-
